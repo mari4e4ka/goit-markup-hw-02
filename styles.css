@@ -1,0 +1,41 @@
+/* Колір акценту #2196F3 */
+ /* Колір заголовків #212121 */
+ /* Колір тексту #757575 */
+
+
+ :root {
+    --title-text-color: #212121;
+    --main-text-color: #757575;
+    --accent-color: #2196F3;
+ }
+
+ body {
+    background-color: #F5F5F5;
+    color: var(--main-text-color);
+ }
+
+ h1,h2,h3,h4 {
+    color: var(--title-text-color);
+ }
+
+ .list {
+    list-style: none;
+ }
+/* Navigation */
+.navigation-item {
+    color: var(--title-text-color);
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    color: var(--accent-color);
+}
+
+.contact-item {
+    color: var(--main-text-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    color: var(--accent-color);
+}
