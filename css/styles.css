@@ -1,16 +1,16 @@
-/* Колір акценту #2196F3 */
- /* Колір заголовків #212121 */
- /* Колір тексту #757575 */
-
-
  :root {
+    --primary-bgc:#F5F5F5;
     --title-text-color: #212121;
     --main-text-color: #757575;
+    --primary-text-color: #F5F4FA;
+    --secondary-text-color: #FFFFFF;
+    --third-text-color: #F5F4FA;
     --accent-color: #2196F3;
+    
  }
 
  body {
-    background-color: #F5F5F5;
+    background-color: var(--third-text-color);
     color: var(--main-text-color);
  }
 
@@ -31,6 +31,10 @@
     color: var(--accent-color);
 }
 
+.navigation-item.current {
+    color: var(--accent-color);
+}
+
 .contact-item {
     color: var(--main-text-color);
 }
@@ -38,4 +42,22 @@
 .contact-item:hover,
 .contact-item:focus {
     color: var(--accent-color);
+}
+
+/* Buttons */
+
+
+.button {
+    font-size: 16px;
+    background-color: var(--primary-bgc);
+    color: var(--title-text-color);
+ }
+.button.primery {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
+.button.secondary {
+    background-color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
