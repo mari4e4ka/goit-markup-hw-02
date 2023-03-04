@@ -1,16 +1,15 @@
  :root {
-    --primary-bgc:#F5F5F5;
-    --title-text-color: #212121;
+    --primary-bgc:#FFFFFF; 
+    --secondary-bgc: #F5F4FA;
+
     --main-text-color: #757575;
-    --primary-text-color: #F5F4FA;
-    --secondary-text-color: #FFFFFF;
-    --third-text-color: #F5F4FA;
+    --title-text-color: #212121;
+ 
     --accent-color: #2196F3;
-    
  }
 
  body {
-    background-color: var(--third-text-color);
+    background-color: var(--primary-bgc);
     color: var(--main-text-color);
  }
 
@@ -21,6 +20,7 @@
  .list {
     list-style: none;
  }
+
 /* Navigation */
 .navigation-item {
     color: var(--title-text-color);
@@ -49,15 +49,20 @@
 
 .button {
     font-size: 16px;
-    background-color: var(--primary-bgc);
-    color: var(--title-text-color);
- }
-.button.primery {
+  }
+
+.button.primery { 
     background-color: var(--accent-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-bgc);
 }
 
 .button.secondary {
-    background-color: var(--primary-text-color);
+    background-color: var(--secondary-bgc);
     color: var(--title-text-color);
-}
+ } 
+
+ /* Team */
+
+ .team {
+    background-color: var(--secondary-bgc);
+ }
