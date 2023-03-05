@@ -6,6 +6,7 @@
   --title-text-color: #212121;
 
   --accent-color: #2196f3;
+  --logo-color: #000000;
 }
 
 body {
@@ -49,6 +50,19 @@ h4 {
   color: var(--accent-color);
 }
 
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 1.19;
+
+  color: var(--logo-color);
+  text-decoration: none;
+}
+.accent {
+color: var(--accent-color);
+}
+
 .contact-item {
   font-weight: 500;
   line-height: 1.14;
@@ -76,24 +90,35 @@ h4 {
 
 /* Buttons */
 
-.button {
-  font-weight: 700;
+.buttom {
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
-.button.primary,
-.button.secondary:hover,
-.button.secondary:focus {
+.buttom.primary {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-bgc);
 }
 
-.button.secondary {
+.buttom.secondary {
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   background-color: var(--secondary-bgc);
   color: var(--title-text-color);
 }
+
+.buttom.secondary:hover,
+.buttom.secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bgc);
+}
+
+
+
 
 /* Why we */
 .preference-title {
